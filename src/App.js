@@ -12,6 +12,7 @@ function App() {
   return (
     <>
       <div id="sidebar">
+        <img id="vogel-logo" src="./logo.png" alt="" />
         <SideBarButton icon={homeLogo} text="feed" />
         <SideBarButton icon={portraitLogo} text="profile" />
         <SideBarButton icon={compassLogo} text="explore" />
@@ -19,6 +20,7 @@ function App() {
         <SideBarButton icon={signoutLogo} text="logout" />
         <SideBarButton icon={pagesLogo} text="pages" />
         <SideBarButton icon={flameLogo} text="trending" />
+        <button id="blue-sign-in-btn">{'sign in +'.toUpperCase()}</button>
       </div>
     </>
   )

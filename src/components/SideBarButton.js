@@ -2,9 +2,9 @@ import React from 'react'
 
 const SideBarButton = ({ icon, text }) => {
   return (
-    <div className="sideBarButton">
+    <div className="sidebarButton">
       <img className="sidebarIcon" src={icon} alt={text} />
-      <p className="sidebar-paragraph">{text.toUpperCase()}</p>
+      <p className="sidebarParagraph">{text.toUpperCase()}</p>
     </div>
   )
 }
