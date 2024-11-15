@@ -2,6 +2,8 @@ import './App.scss'
 
 import SideBarButton from './components/SideBarButton'
 import FeedSwitch from './components/FeedSwitch'
+import FollowPeople from './components/FollowPeople'
+import NewPost from './components/NewPost'
 
 import homeLogo from './images/home.svg'
 import compassLogo from './images/compass-alt.svg'
@@ -10,10 +12,6 @@ import portraitLogo from './images/portrait.svg'
 import signoutLogo from './images/sign-out-alt.svg'
 import pagesLogo from './images/window-maximize.svg'
 import flameLogo from './images/flame.svg'
-
-import { ReactComponent as ProfileLogo } from './images/portrait.svg'
-import { ReactComponent as PlusLogo } from './images/plus.svg'
-import { ReactComponent as ArrowLogo } from './images/arrow-right.svg'
 
 function App() {
   return (
@@ -31,15 +29,8 @@ function App() {
       </div>
       <div id="main-container">
         <FeedSwitch />
-        <div id="new-post-container">
-          <ProfileLogo className="new-post-icon" style={{ fill: '#0d6efd' }} />
-          <p id="new-post-paragraph">What's on your mind.</p>
-          <PlusLogo className="new-post-icon" style={{ fill: '#0d6efd' }} />
-        </div>
-        <div id="follow-people-container">
-          <p id="follow-people-paragraph">Follow People</p>
-          <ArrowLogo id="follow-people-arrow-icon" style={{ fill: 'black' }} />
-        </div>
+        <NewPost />
+        <FollowPeople />
       </div>
     </>
   )
